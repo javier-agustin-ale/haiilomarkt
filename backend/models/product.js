@@ -4,7 +4,8 @@ import sequelize from '../config.js';
 const Product = sequelize.define('Product', {
 	productId: {
 		type: DataTypes.INTEGER,
-		allowNull: false,
+		primaryKey: true,
+		autoIncrement: true,
 		unique: true,
 	},
 	name: {
